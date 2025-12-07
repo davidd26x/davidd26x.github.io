@@ -1,4 +1,4 @@
-/* === ESTILO GENERAL === */
+
 body {
   font-family: "Inter", Arial, sans-serif;
   margin: 0;
@@ -7,7 +7,7 @@ body {
   color: #222;
 }
 
-/* === HEADER === */
+
 .header-container {
   display: flex;
   align-items: center;
@@ -30,7 +30,7 @@ body {
   opacity: 0.9;
 }
 
-/* === SECCIONES === */
+
 section {
   width: 80%;
   margin: 40px auto;
@@ -58,7 +58,7 @@ footer {
   margin-top: 50px;
 }
 
-/* === FOTO DE PERFIL === */
+
 .profile-photo {
   width: 130px;
   height: 130px;
@@ -68,7 +68,7 @@ footer {
   box-shadow: 0 0 8px rgba(255, 255, 255, 0.4);
 }
 
-/* === SWITCHER DE IDIOMA === */
+
 .language-switcher {
   position: fixed;
   top: 20px;
@@ -97,7 +97,7 @@ footer {
   transform: scale(1.15);
 }
 
-/* RESPONSIVE */
+
 @media (max-width: 600px) {
   .header-container {
     flex-direction: column;

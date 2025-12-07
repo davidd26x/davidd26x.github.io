@@ -86,7 +86,7 @@ const texts = {
   },
 };
 
-// CAMBIO DE IDIOMA
+
 function switchLang(lang) {
   document.querySelectorAll("[data-lang]").forEach((el) => {
     const key = el.getAttribute("data-lang");
@@ -94,7 +94,7 @@ function switchLang(lang) {
   });
 }
 
-// EVENTOS DE BANDERAS
+
 document.getElementById("es-btn").addEventListener("click", () => {
   switchLang("es");
   setActive("es-btn");
@@ -105,7 +105,7 @@ document.getElementById("en-btn").addEventListener("click", () => {
   setActive("en-btn");
 });
 
-// EFECTO DE BANDERA ACTIVA
+
 function setActive(id) {
   document.querySelectorAll(".lang-icon").forEach((icon) => {
     icon.classList.remove("active");
