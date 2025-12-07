@@ -1,60 +1,114 @@
+/* === ESTILO GENERAL === */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background: #f4f7fb;
-    color: #222;
+  font-family: "Inter", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #eef3f8;
+  color: #222;
 }
 
-header {
-    background: #102b57;
-    color: white;
-    text-align: center;
-    padding: 40px 20px;
+/* === HEADER === */
+.header-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background: #102b57;
+  color: white;
+  padding: 40px 30px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
 
+.header-text h1 {
+  margin: 0;
+  font-size: 28px;
+}
+
+.header-text p {
+  margin-top: 5px;
+  font-size: 15px;
+  opacity: 0.9;
+}
+
+/* === SECCIONES === */
 section {
-    width: 80%;
-    margin: 40px auto;
-    background: white;
-    padding: 25px;
-    border-radius: 10px;
+  width: 80%;
+  margin: 40px auto;
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
 h2 {
-    color: #102b57;
+  color: #102b57;
+  margin-bottom: 12px;
 }
 
 ul {
-    margin-left: 20px;
+  margin-left: 20px;
+  line-height: 1.6;
 }
 
 footer {
-    text-align: center;
-    padding: 20px;
-    background: #102b57;
-    color: white;
-    margin-top: 40px;
+  text-align: center;
+  padding: 25px;
+  background: #102b57;
+  color: white;
+  margin-top: 50px;
 }
 
+/* === FOTO DE PERFIL === */
 .profile-photo {
-    width: 130px;
-    height: 130px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-right: 25px;
-    border: 3px solid white;
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid white;
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.4);
 }
 
-.language-toggle {
-    position: absolute;
-    top: 20px;
-    right: 20px;
+/* === SWITCHER DE IDIOMA === */
+.language-switcher {
+  position: fixed;
+  top: 20px;
+  right: 25px;
+  display: flex;
+  gap: 12px;
+  z-index: 999;
 }
 
-.language-toggle button {
-    margin-left: 5px;
-    padding: 6px 12px;
-    font-size: 14px;
-    cursor: pointer;
+.lang-icon {
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  opacity: 0.55;
+  transition: transform 0.22s ease, opacity 0.22s ease;
+  filter: drop-shadow(0 0 3px rgba(0, 0, 0, 0.15));
+}
+
+.lang-icon:hover {
+  opacity: 1;
+  transform: scale(1.12);
+}
+
+.lang-icon.active {
+  opacity: 1;
+  transform: scale(1.15);
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  .header-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .profile-photo {
+    margin-bottom: 12px;
+  }
+
+  section {
+    width: 90%;
+  }
 }

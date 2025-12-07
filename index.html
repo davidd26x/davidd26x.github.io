@@ -8,25 +8,37 @@
   </head>
 
   <body>
-    <div class="language-toggle">
-      <button id="btn-es">ES</button>
-      <button id="btn-en">EN</button>
+    <div class="language-switcher">
+      <img
+        src="assets/icons/esp.png"
+        id="es-btn"
+        class="lang-icon"
+        alt="Español"
+      />
+      <img
+        src="assets/icons/en.png"
+        id="en-btn"
+        class="lang-icon"
+        alt="English"
+      />
     </div>
 
+    <!-- HEADER -->
     <header class="header-container">
       <img src="assets/imageCV.jpg" alt="Foto de Jose" class="profile-photo" />
 
       <div class="header-text">
-        <h1>Jose David Segura Carranza</h1>
-        <p>
+        <h1 data-lang="header_title">Jose David Segura Carranza</h1>
+        <p data-lang="header_subtitle">
           QA Tester • Pruebas Manuales • Pruebas de API • Metodologías Ágiles
         </p>
       </div>
     </header>
 
+    <!-- SOBRE MI -->
     <section id="about">
-      <h2>Sobre mí</h2>
-      <p>
+      <h2 data-lang="about_title">Sobre mí</h2>
+      <p data-lang="about_text">
         Estudiante de Aseguramiento de la Calidad de Software motivado y
         orientado a los detalles, con experiencia en pruebas manuales y de API,
         metodologías ágiles y soporte técnico. Apasionado por garantizar la
@@ -34,66 +46,81 @@
       </p>
     </section>
 
+    <!-- EXPERIENCIA -->
     <section id="experience">
-      <h2>Experiencia</h2>
-      <h3>4Geeks – Pasantía QA (Ago 2025 – Dic 2025)</h3>
+      <h2 data-lang="exp_title">Experiencia</h2>
+
+      <h3 data-lang="exp_job">4Geeks – Pasantía QA (Ago 2025 – Dic 2025)</h3>
+
       <ul>
-        <li>Pruebas manuales y de API para aplicaciones web.</li>
-        <li>Ejecución de casos de prueba y reporte de resultados.</li>
-        <li>
+        <li data-lang="exp_li1">
+          Pruebas manuales y de API para aplicaciones web.
+        </li>
+        <li data-lang="exp_li2">
+          Ejecución de casos de prueba y reporte de resultados.
+        </li>
+        <li data-lang="exp_li3">
           Verificación de flujos, manejo de errores y comportamiento de la
           interfaz.
         </li>
-        <li>
+        <li data-lang="exp_li4">
           Colaboración con el equipo de desarrollo asegurando estándares de
           calidad.
         </li>
       </ul>
+
       <p>
-        <strong>Herramientas:</strong> Postman, TestRail, DevTools, Gitlab,
-        ScrumMate, Docker, VsCode, Stripe, Frappe Cloud.
+        <strong data-lang="exp_tools">Herramientas:</strong>
+        Postman, TestRail, DevTools, Gitlab, ScrumMate, Docker, VsCode, Stripe,
+        Frappe Cloud.
       </p>
     </section>
 
+    <!-- PROYECTOS -->
     <section id="projects">
-      <h2>Proyectos</h2>
+      <h2 data-lang="proj_title">Proyectos</h2>
       <ul>
-        <li>
+        <li data-lang="proj1">
           <strong>Testing de API con Postman:</strong> Colección con pruebas de
           autenticación, CRUD y validación de respuestas JSON.
         </li>
-        <li>
+        <li data-lang="proj2">
           <strong>Casos de prueba:</strong> Diseño de casos de prueba en
           TestRail para módulos de login, checkout y dashboard.
         </li>
-        <li>
+        <li data-lang="proj3">
           <strong>Reporte de bugs:</strong> Documentación de defectos incluyendo
           pasos de reproducción, severidad y evidencia.
         </li>
       </ul>
     </section>
 
+    <!-- HABILIDADES -->
     <section id="skills">
-      <h2>Habilidades Técnicas</h2>
+      <h2 data-lang="skills_title">Habilidades Técnicas</h2>
       <ul>
-        <li>Testing manual</li>
-        <li>Testing de APIs</li>
-        <li>DevTools, Postman, Git, Docker</li>
-        <li>Metodologías ágiles</li>
-        <li>TestRail</li>
-        <li>Microsoft Office 365</li>
+        <li data-lang="skill1">Testing manual</li>
+        <li data-lang="skill2">Testing de APIs</li>
+        <li data-lang="skill3">DevTools, Postman, Git, Docker</li>
+        <li data-lang="skill4">Metodologías ágiles</li>
+        <li data-lang="skill5">TestRail</li>
+        <li data-lang="skill6">Microsoft Office 365</li>
       </ul>
     </section>
 
+    <!-- CONTACTO -->
     <section id="contact">
-      <h2>Contacto</h2>
-      <p>📧 jose01265@gmail.com</p>
-      <p>📱 8692-2390</p>
-      <p>📍 Palmares, Alajuela</p>
+      <h2 data-lang="contact_title">Contacto</h2>
+      <p data-lang="contact_email">📧 jose01265@gmail.com</p>
+      <p data-lang="contact_phone">📱 8692-2390</p>
+      <p data-lang="contact_location">📍 Palmares, Alajuela</p>
     </section>
 
+    <!-- FOOTER -->
     <footer>
-      <p>© 2025 Jose David Segura. Hecho con GitHub Pages.</p>
+      <p data-lang="footer_text">
+        © 2025 Jose David Segura. Hecho con GitHub Pages.
+      </p>
     </footer>
 
     <script src="js/lang.js"></script>
